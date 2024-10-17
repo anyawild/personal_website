@@ -6,36 +6,60 @@
     <title>Anya's Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .column {
+        float: left;
+        width: 50%;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        align-content: center;
+    }  
+</style>
 <body>
 
-    <h1 style="color: green; font-size:500%">Welcome! My name's Anya</h1>
+    <h1>Welcome! My name's Anya :)</h1>
 
-    <h3>This is my personal website</h3>
+    <h2>This is my personal website</h3>
 
-    <button id = 'navigateButton'>Go to another page</button>
+    <!-- <button id = 'navigateButton'>Go to another page</button>
 
     <script>
         const navigateButton = document.getElementById('navigateButton')
         navigateButton.addEventListener('click', function() {
             window.location.href = 'https://www.google.com/';
         })
-    </script>
+    </script> -->
 
-    <p id="main">My name is Anya. </p>
+    <p id="about_me">this is going to be a paragraph about me eventually for now 
+        i'll just type a lot of stuff to see how the formatting looks</p>
 
-    <p class='A'>Today is a <b>good</b> day!</p>
+    <div class="row">
+        <div class="column">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Rainier20200906.jpg/544px-Rainier20200906.jpg" height="350">
+        </div>
+        <div class="column">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/White_Matter_Connections_Obtained_with_MRI_Tractography.png" height="350">
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="https://eu-images.contentstack.com/v3/assets/blt69509c9116440be8/blt78e30d2a19a7c7e1/64cb18833a147b0c51a1f5c5/datascience-pdusit-stock.jpg?width=1280&auto=webp&quality=95&format=jpg&disable=upscale" height="350">
+        </div>
+        <div class="column">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Boston_skyline_from_Longfellow_Bridge_September_2017_panorama_2.jpg/576px-Boston_skyline_from_Longfellow_Bridge_September_2017_panorama_2.jpg" height="350">
+        </div>
+    </div>
 
-    <p>I will an A in <i>DS4200</i></p>
-
-    <a href="https://www.northeastern.edu">Please check out NU website</a> 
-
-    <ul class = 'A'>
-        <li>Talk to my TAs</li>
-        <li>Regrade quiz</li>
-        <li>Read papers</li>
-    </ul>
-
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/1280px-Cat_November_2010-1a.jpg" alt="" width="500">
+<!-- 
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Rainier20200906.jpg/544px-Rainier20200906.jpg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/White_Matter_Connections_Obtained_with_MRI_Tractography.png"> -->
 
 </body>
 </html>
