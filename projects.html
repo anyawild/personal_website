@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anya's Personal Projects</title>
+    <title>Projects</title>
     <link rel="stylesheet" type= "text/css" href="style.css">
 </head>
 <body>
@@ -14,26 +14,51 @@
     <ul class="tabs">
         <li><a href="index.html">Home</a></li>
         <li><a class="active" href="projects.html">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="dm_coop.html">Data Management Co-op</a></li>
+        <li><a href="https://www.linkedin.com/in/anyawild777/" target="_blank">LinkedIn</a></li>
     </ul> 
 
+    <p>I started coding my senior year of high school, and began my first year at
+        Northeastern as a combined Computer Science and Behavioral Neuroscience major.
+        Because of this, all of my projects until recently have been excersices in making
+        design decisions: what's the best way to create a coding representation of this
+        puzzle or game? These projects were all done using Java, with the exception of
+        Wordle using Dr. Racket.
+    </p>
+    <p>Now, as I discovered my interests lie more specifically in Data Science, I
+        switched my major to Data Science and BNS, and am currently taking both
+        a data visualization and foundational data science course. The first three
+        projects below (including the basis for this website) come from these courses.
+    </p>
+
     <ul class="projects">
-        <li><p id="h_world">Hello World!</p></li>
-        <li><p>Wordle</p></li>
-        <li><p>Flood It</p></li>
-        <li><p>Vignere Cipher</p></li>
-        <li><p>Klondike Solitaire</p></li>
+        <li><p id="website">This website !</p></li>
+        <li><p>Wildfire Machine Learning Project</p></li>
+        <li><p>CO2 vs. GDP Project</p></li>
         <li><p>Reversi</p></li>
+        <li><p>Klondike Solitaire</p></li>
+        <li><p>Vignere Cipher</p></li>
+        <li><p>Flood It</p></li>
+        <li><p>Simon Says</p></li>
+        <li><p>Wordle</p></li>
+        <li><p id="h_world">Hello World!</p></li>
     </ul>
 
     <!-- link for hello world history -->
     <script>
-        const navigateButton = document.getElementById('h_world')
-        navigateButton.addEventListener('click', function() {
-            window.location.href = 'https://en.wikipedia.org/wiki/%22Hello,_World!%22_program';
+        const hWorldButton = document.getElementById('h_world')
+        hWorldButton.addEventListener('click', function() {
+            link = 'https://en.wikipedia.org/wiki/%22Hello,_World!%22_program';
+            window.open(link, '_blank');
         })
     </script>
-
+    <!-- link back to website homepage -->
+    <script>
+        const webButton = document.getElementById('website')
+        webButton.addEventListener('click', function() {
+            window.location.href = 'index.html';
+        })
+    </script>
     
 </body>
 </html>
