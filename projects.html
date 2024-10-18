@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anya's Personal Projects</title>
+    <link rel="stylesheet" type= "text/css" href="style.css">
+</head>
+<body>
+    <h1>What have I made?</h1>
+
+    <h2>(all links coming soon)</h2>
+
+    <ul class="tabs">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="projects.html">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul> 
+
+    <ul class="projects">
+        <li><p id="h_world">Hello World!</p></li>
+        <li><p>Wordle</p></li>
+        <li><p>Flood It</p></li>
+        <li><p>Vignere Cipher</p></li>
+        <li><p>Klondike Solitaire</p></li>
+        <li><p>Reversi</p></li>
+    </ul>
+
+    <!-- link for hello world history -->
+    <script>
+        const navigateButton = document.getElementById('h_world')
+        navigateButton.addEventListener('click', function() {
+            window.location.href = 'https://en.wikipedia.org/wiki/%22Hello,_World!%22_program';
+        })
+    </script>
+
+    
+</body>
+</html>
