@@ -1,20 +1,30 @@
+:root {
+    --bg : rgb(157, 194, 153);;
+    --col1 : rgb(119, 167, 115);
+    --col2 : rgb(230, 242, 228);
+    --col3 : rgb(248, 255, 247);
+    --col1_ : rgba(119, 167, 115, 0.5);
+    --col3_ : rgb(248, 255, 247, .5);
+}
+
+
 body {
-    background-image: linear-gradient(180deg, rgb(119, 167, 115), rgb(230, 242, 228));
+    background-color : var(--bg);
     background-attachment: fixed;
     font-family: "Lucida Console", monospace;
     padding: 0;
     margin: 0;
-    color: rgb(248, 255, 247);
+    color: var(--col3);
 }
 
 h1 {
-    color: rgb(119, 167, 115); 
+    color: var(--col1); 
     font-size: 300%;
     text-align: center;
     letter-spacing: -2px;
-    background-color: rgb(248, 255, 247);
-    margin-top: 80px;
+    background-color: var(--col3);
     padding: 20px;
+    margin-top: 80px;
 } 
 
 h2 {
@@ -30,8 +40,8 @@ p {
 
 /* about me paragraph */
 #about_me {
-    border: 2px solid rgb(248, 255, 247);
-    background-color: rgba(119, 167, 115, 0.8);
+    border: 2px solid var(--col3);
+    background-color: var(--col1);
     margin: 10px;
     padding: 20px;
 }
@@ -59,28 +69,35 @@ img {
     margin-top: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(248, 255, 247, 0.5);
+    background-color: var(--col3_);
     position: fixed;
     top: 0;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
 }
 .tabs li {
-    float: left;
+    flex: 1;
+    text-align: center;
 }
 .tabs li a {
     display: block;
-    color: rgb(66, 94, 63);
+    color: var(--col1);
     text-align: center;
-    padding: 20px 20px;
+    padding: 20px;
     text-decoration: none;
+    font-size: 125%;
+    height: 100%;
 }
 .tabs li a:hover:not(.active) {
-    background-color: rgb(119, 167, 115);
-    color: rgb(248, 255, 247);
+    background-color: var(--col1_);
+    color: var(--col3);
 }
 .tabs .active {
-    color: rgb(248, 255, 247);
-    background-color: rgb(119, 167, 115);
+    color: var(--col3);
+    background-color: var(--col1);
 }
 
  /* projects formatting */
@@ -91,13 +108,13 @@ img {
     padding: 0;
 }
 .projects p {
-    border: 2px solid rgb(248, 255, 247);
-    background-color: rgb(119, 167, 115, 0.8);
+    border: 2px solid var(--col3);
+    background-color: var(--col1);
     padding: 30px;
     margin: 10px;
     font-size: 125%;
 }
 .projects li p:hover {
-    background-color: rgb(248, 255, 247);
-    color: rgb(119, 167, 115, 0.8);
+    background-color: var(--col3);
+    color: var(--col1);
 }
