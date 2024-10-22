@@ -1,6 +1,21 @@
-This file explains some of my stylistic choices in creating this website:
+Stylistic Choices
+---------------------------------------------------------------------
+Link:
 https://anyawild.github.io/personal_website/
 
+I did essentially all of my formatting and styling externally in my
+CSS file instead of in the HTML itself in order to keep things clean
+and consistent throughout the website.
 
-
+Some things in the CSS file:
+- I created a color palette at the top that was referenced throughout
+    the file in order to keep a consistent green palette.
+- I also imported a font family to make the text more visually appealing 
+    as well as keep it consistent.
+- I formatted the images I added to be dynamic with the webpage window.
+- I formatted the tab naviagtion at the top of the webpage to be sized
+    based on the window but have a fixed position so as to be reachable 
+    when scrolling down the webpage.
+- For both the navigation tab and the projects on the projects page, I 
+    formatted the boxes to highlight when hovered over.
 
