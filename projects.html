@@ -33,8 +33,8 @@
 
     <ul class="projects">
         <li><p id="website">This website !</p></li>
-        <li><p>Wildfire Machine Learning Project</p></li>
-        <li><p>CO2 vs. GDP Project</p></li>
+        <li><p id="ds3000_final">Wildfire Machine Learning Project</p></li>
+        <li><p id="ds4200_final">CO2 vs. GDP Project</p></li>
         <li><p>Reversi</p></li>
         <li><p>Klondike Solitaire</p></li>
         <li><p>Vignere Cipher</p></li>
@@ -59,6 +59,22 @@
             window.location.href = 'index.html';
         })
     </script>
-    
+    <!-- link to wildfire ML github repo -->
+    <script>
+        const ds3000Button = document.getElementById('ds3000_final')
+        ds3000Button.addEventListener('click', function() {
+            link_2 = 'https://github.com/anyawild/DS3000_Final_Project_Team2';
+            window.open(link_2, '_blank');
+        })
+    </script>
+    <!-- link to CO2 vs. GDP webpage -->
+    <script>
+        const ds4200Button = document.getElementById('ds4200_final')
+        ds4200Button.addEventListener('click', function() {
+            link_3 = 'https://anyawild.github.io/DS4200_Group3_FinalProject/';
+            window.open(link_3, '_blank');
+        })
+    </script>
+
 </body>
 </html>
