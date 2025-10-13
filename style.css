@@ -117,8 +117,8 @@ img {
     font-size: 150%;
 }
 .projects li p:hover {
-    background-color: var(--col3);
-    color: var(--col1);
+    background-color: var(--bg);
+    /* color: var(--col1); */
 }
 
 /* job page formatting */
