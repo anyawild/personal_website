@@ -21,9 +21,9 @@
     </div>
 
 
-    <h1>What have I made?</h1>
+    <h1>Projects</h1>
 
-    <h2>(all links coming soon)</h2>
+    <h2>What have I made?</h2>
 
     <ul class="projects">
         <li>
@@ -40,6 +40,14 @@
                 to predict wildfire occurrence through the development of linear regression, polynomial regression, and
                 classification models.
                 <img src="images/ds300_final_p.png" style="padding-top: 20px;">
+            </p>
+        </li>
+        <li>
+            <p id="reversi"><b style="font-size: 30px">Reversi Game</b><br><br>
+                This Java implementation and GUI for the game Reversi utilizes a model-view-controller design pattern and 
+                implements virtual opponents to automatically play turns based on a set of decision-making algorithms. This project
+                also includes an adapter class to easily couple the existing game model to an outside GUI implementation. 
+                <img src="images/reversi.png" style="padding-top: 20px;">
             </p>
         </li>
         <li>
@@ -82,12 +90,20 @@
             window.open(link_2, '_blank');
         })
     </script>
+    <!-- reversi only available upon request -->
+    <script>
+        const reversiButt = document.getElementById('reversi')
+        reversiButt.addEventListener('click', function () {
+            link_3 = 'reversi.html';
+            window.open(link_3, '_blank');
+        })
+    </script>
     <!-- link to CO2 vs. GDP webpage -->
     <script>
         const ds4200Button = document.getElementById('ds4200_final')
         ds4200Button.addEventListener('click', function () {
-            link_3 = 'https://anyawild.github.io/DS4200_Group3_FinalProject/';
-            window.open(link_3, '_blank');
+            link_4 = 'https://anyawild.github.io/DS4200_Group3_FinalProject/';
+            window.open(link_4, '_blank');
         })
     </script>
 
