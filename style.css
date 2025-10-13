@@ -11,7 +11,7 @@
 body {
     background-color : var(--bg);
     background-attachment: fixed;
-    font-family: "Lucida Console", monospace;
+    font-family: "Gill Sans", sans-serif;
     padding: 0;
     margin: 0;
     color: var(--col3);
@@ -34,6 +34,7 @@ h2 {
 }
 
 p {
+    font-size: 150%;
     text-align: center;
     margin: 20px;
 }
@@ -62,6 +63,7 @@ img {
     clear: both;
     display: table;
 } 
+
 
 /* top navigation tab */
 .tabs {
@@ -112,9 +114,15 @@ img {
     background-color: var(--col1);
     padding: 30px;
     margin: 10px;
-    font-size: 125%;
+    font-size: 150%;
 }
 .projects li p:hover {
     background-color: var(--col3);
     color: var(--col1);
+}
+
+/* job page formatting */
+.job li {
+    margin: 10px;
+    font-size: 150%;
 }
