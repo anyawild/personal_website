@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <link rel="stylesheet" type= "text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-    <div><ul class="tabs">
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="projects.html">Projects</a></li>
-        <li><a href="dm_coop.html">DM Co-op</a></li>
-        <li><a href="netsi_coop.html">NetSI Co-op</a></li>
-        <li><a href="https://www.linkedin.com/in/anyawild777/" target="_blank">LinkedIn</a></li>
-        <li><a href="AWild_website_res.pdf">Resume</a></li>
-    </ul></div>
+    <div>
+        <ul class="tabs">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="projects.html">Projects</a></li>
+            <li><a href="dm_coop.html">DM Co-op</a></li>
+            <li><a href="netsi_coop.html">NetSI Co-op</a></li>
+            <li><a href="https://www.linkedin.com/in/anyawild777/" target="_blank">LinkedIn</a></li>
+            <li><a href="AWild_website_res.pdf">Resume</a></li>
+        </ul>
+    </div>
 
 
     <h1>What have I made?</h1>
@@ -22,14 +26,30 @@
     <h2>(all links coming soon)</h2>
 
     <ul class="projects">
-        <li><p id="website"><b style="font-size: 30px">This website!</b><br><br>
-            Created originally for my Information Presentation and Visualization course, this website both showcases by HTML/CSS/JavaScript skills and serves to organize my projects and experiences.
-            <img src="images/Screen Shot 2025-10-13 at 5.23.27 PM.png" style="filter: grayscale(100%); padding-top: 20px;"></p>
+        <li>
+            <p id="website"><b style="font-size: 30px">This website!</b><br><br>
+                Created originally for my Information Presentation and Visualization course, this website both showcases
+                by HTML/CSS/JavaScript skills and serves to organize my projects and experiences. (You're here now!)
+                <img src="images/Screen Shot 2025-10-13 at 5.23.27 PM.png"
+                    style="filter: grayscale(100%); padding-top: 20px;">
+            </p>
         </li>
-        <li><p id="ds3000_final"><b style="font-size: 30px">Wildfire Machine Learning Project</b><br><br>
-            Using data from NASA’s Fire Information for Resource Management System (FIRMS) API, this project aimed to predict wildfire occurrence through the development of linear regression, polynomial regression, and classification models.
-            <img src="images/ds300_final_p.png" style="padding-top: 20px;"></p></li>
-        <li><p id="ds4200_final">CO2 vs. GDP Project</p></li>
+        <li>
+            <p id="ds3000_final"><b style="font-size: 30px">Wildfire Machine Learning Project</b><br><br>
+                Using data from NASA’s Fire Information for Resource Management System (FIRMS) API, this project aimed
+                to predict wildfire occurrence through the development of linear regression, polynomial regression, and
+                classification models.
+                <img src="images/ds300_final_p.png" style="padding-top: 20px;">
+            </p>
+        </li>
+        <li>
+            <p id="ds4200_final"><b style="font-size: 30px">CO2 vs. GDP Project</b><br><br>
+                This project showcases various visualization tools and techniques in Python and HTML/CSS/JavaScript,
+                including important libraries such as Matplotlib, Seaborn, Plotly, Altair, and D3. The end result is an
+                interactive website highlighting data analysis findings from C02 emissions data.
+                <img src="images/co2.png" style="padding-top: 20px;">
+            </p>
+        </li>
         <!-- <li><p>Reversi</p></li>
         <li><p>Klondike Solitaire</p></li>
         <li><p>Vignere Cipher</p></li>
@@ -42,7 +62,7 @@
     <!-- link for hello world history -->
     <script>
         const hWorldButton = document.getElementById('h_world')
-        hWorldButton.addEventListener('click', function() {
+        hWorldButton.addEventListener('click', function () {
             link = 'https://en.wikipedia.org/wiki/%22Hello,_World!%22_program';
             window.open(link, '_blank');
         })
@@ -50,14 +70,14 @@
     <!-- link back to website homepage -->
     <script>
         const webButton = document.getElementById('website')
-        webButton.addEventListener('click', function() {
+        webButton.addEventListener('click', function () {
             window.location.href = 'index.html';
         })
     </script>
     <!-- link to wildfire ML github repo -->
     <script>
         const ds3000Button = document.getElementById('ds3000_final')
-        ds3000Button.addEventListener('click', function() {
+        ds3000Button.addEventListener('click', function () {
             link_2 = 'https://github.com/anyawild/DS3000_Final_Project_Team2';
             window.open(link_2, '_blank');
         })
@@ -65,11 +85,12 @@
     <!-- link to CO2 vs. GDP webpage -->
     <script>
         const ds4200Button = document.getElementById('ds4200_final')
-        ds4200Button.addEventListener('click', function() {
+        ds4200Button.addEventListener('click', function () {
             link_3 = 'https://anyawild.github.io/DS4200_Group3_FinalProject/';
             window.open(link_3, '_blank');
         })
     </script>
 
 </body>
+
 </html>

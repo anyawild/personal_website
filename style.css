@@ -49,7 +49,7 @@ p {
 
 /* images - columns and rows */
 img {
-    width: 100%;
+    width: 100%; 
     object-fit: cover;
 }
 .column {
