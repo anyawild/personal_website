@@ -126,3 +126,8 @@ img {
     margin: 10px;
     font-size: 150%;
 }
+
+/* git link on front page */
+#git_l:hover:not(.active) {
+    color: var(--col1);
+}
